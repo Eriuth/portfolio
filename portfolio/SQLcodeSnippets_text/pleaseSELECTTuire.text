@@ -274,7 +274,7 @@ Potential_organizations_search_results.poista_nimella('TamaPotentiaalinenTyopaik
 Class Motivoidu:
     def __init__(self, jne)
     self.jne = jne
-
+	
 	>def arvioi_tilanne()
     >def valitse_listalta([liiku(), kavereita(), nettiin(Freetime.GizmosToBuyWithWages), 
                 nettiin(list_motivational), unohda_hetkeksi(open_game), 
