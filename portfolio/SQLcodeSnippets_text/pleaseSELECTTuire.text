@@ -61,8 +61,8 @@ is to be edited or added on to as learning loops accumulate better knowledge to 
 Class Potential_organizations_search_results:
 	def __init__(self, prio_potentiality_points, ala, nimi, yhteysossa, yhteyshlo, linkki, tila):
 	Self.prio_potentiality_points = prio_potentiality_points
-    jne 
-    def testeja(tiedot)	
+	jne 
+	def testeja(tiedot)	
 
 	>def luo_kirjasto(tiedot):
 	>def luo_tietokanta(tiedot):
