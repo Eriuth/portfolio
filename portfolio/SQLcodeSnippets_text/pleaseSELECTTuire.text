@@ -1,0 +1,285 @@
+Välicode snippets - Please, SELECT Tuire 
+
+Etsin töitä ja olen joukkoonne erinomainen alaa aloittava juniori erityisesti, 
+jos tiiminne osaa auttaa minua muotoilemaan seuraavat tämänhetkiset hahmotelmani 
+paremmiksi vitseiksi sekä siten oppimaan ja näkemään koodin laajempia ulottuvuuksia. 
+Muodollisempia pätevyysarvioita varten alanvaihtajalle sopiva LinkedIn-profiilini, 
+Githubin portfolio v 1.0 ja tiedot suoraan minulta (Tuire Ahola) ovat myös saatavilla. 
+
+
+**
+
+Potential employee -> Tuire
+Potential Employer -> Your organization? | That other place I found before you?
+
+**
+
+Requirements for this file in a broader repository on motivation to learn more:
+
+- Ongoing crawling after future employment and learning opportunities
+- Python
+- Some API to change data between Tuire and Potential employer
+- Server Provider accepts queries
+- Ability to insert TSQL
+- A strong will to learn the chosen API
+- Server provider answers and sends data or initiates processes
+
+**
+HeadDatabase on HeadServer1, schemas and tables: 
+
+Potential.Employees, Experience.Work, Experience.Association, 
+Experience.Other, Experience.Recommendations, Education.Degrees, 
+Education.Certifications, Education.Courses, Personality.TestResultsScientific, 
+Personality.LaymanSaidMutu, Freetime.Hobbies, Coding.Languages, Coding.LessonsLearned, 
+Coding.IDEsUsed, Coding.Github, Wages.History, Wages.Statistics, Wages.LaymanSaidMutu, 
+Wages.LaymanSaidInternet, Wages.ResultsDetectiveWork, Freetime.GizmosToBuyWithWages, 
+Freetime.CodeToDoIfMoreFreetime
+
+**
+
+Documentation snippet on the process of finding an employment:
+
+After the chosen web crawler ‘Tuire’s eyes v 2022.08’ has scanned and sent data on 
+potential employers to contact to Tuire’s HeadDataBase, 
+the process of connecting a potential employer may begin.
+
+search_parameters = { ‘rooli’: [“junior coder”, “juniori koodari”, “koodari”, “business analyst”], 
+‘text_potential_announcement_has’: [“Osaa ohjelmoinnin perusteita ja esimerkiksi Microsoftin tuotteita, 
+kuten Virtual Studio Coden", "SQL", "Python tai muita kieliä”, “harrastuneisuus”, “motivoitunut tiimi”, “sennu paikalla”,
+”kyky oppia”, “lupa oppia”, “halu kehittyä”, “lupa kehittyä”, “alan hyvät käytännöt”, 
+“back-end”, “data”, “API”], 
+‘text_potential_good_processes’: [“agile”, “ketterä”, “scrum”, “kanban”…]
+
+
+This documentation and parameters to develop a better web crawler, process, parameters, DataBase etc 
+is to be edited or added on to as learning loops accumulate better knowledge to achieve the chosen goals.
+
+**
+# code snippets
+
+
+Class Potential_organizations_search_results:
+	def __init__(self, prio_potentiality_points, ala, nimi, yhteysossa, yhteyshlo, linkki, tila):
+	Self.prio_potentiality_points = prio_potentiality_points
+    jne 
+    def testeja(tiedot)	
+
+	>def luo_kirjasto(tiedot):
+	>def luo_tietokanta(tiedot):
+	>def paivita_tietokanta(tiedot):
+	>def poista_nimella(tiedot):
+	>jne
+
+
+**
+
+# code snippet for getting the connection
+
+import requests
+from Dictionaryheadbasebundle import *  #import all is not recommended! Slow, unexpected results, FIX!
+
+address = “https://api.potentialemployerandteamwithlearningpossibilities.com/v1/hiring?places=junior”
+r = requests.get(address)
+r.status_code
+
+> 200
+**
+\o/
+**
+
+# code snippet from the middle of a function to make enquiries to a potential employer
+# secure line
+
+# code snippets from the middle of imaginary http-request where sending code is possible 
+# Something like please_add_this_to_your_databases_of_future_employees(“Tuire”)
+
+SELECT Tuire
+FROM Potential.NewJuniorCoders
+
+**
+
+# Results. 
+# Results after checking answer through politeness-decode-frank-forDummies-extension
+
+> 403 Forbidden -> decoded using an extension -> 
+Understood that you want a nice workplace here where our seniors are pro 
+and juniors have possibilities to learn full-time and hands-on to become better coders 
+as well as the industry but your code snippet(s) couldn’t be validated. 
+Please check documentation for acceptable constructions of requested parameters 
+and data for continuing the process. 
+PS. We weren’t quite sure whether we should send you ‘411 Length required’ code or this, 
+but we are quite sure that: “The request should not be repeated.”
+
+**
+=’(
+***
+
+# Improving
+# some TSQL snippets from the improving phase
+
+CREATE TABLE {HeadDatabase.Coding.CV}
+(Id INT NOT NULL,
+Koodauskielet VARCHAR 50 NOT NULL,
+Taho VARCHAR 20 NOT NULL,
+Suoritus VARCHAR 20 NOT NULL,
+Tila VARCHAR 20 NOT NULL,
+TietoPaivitetty INT NOT NULL,
+);
+
+INSERT INTO  HeadDatabase.Coding.CV (Id, Koodauskielet, Taho, Suoritus, Tila, 
+	TietoPaivitetty)
+SELECT co.Kieli, co.Koulu, co.Kurssi, co. ArvioituTila, 
+		TRY_CAST(YEAR(ce.ArvioituPvm) AS int)
+	FROM Education.Courses As co
+	WHERE ala = ‘Tietojenkäsittely;
+
+INSERT INTO HeadDatabase.Coding.CV
+	SELECT ce.Koodikieli, ce.Taho, ce. Nimi, ce.Saavutettu, 
+		TRY_CAST(YEAR(ce.SertifiointiPvm) AS int)
+	FROM Education.Certifications AS ce
+	WHERE ala=”Tietojenkäsittely”;
+
+***
+# Insert-työtä myös tauluista: Freetime.Hobbies, Coding.Github ;
+# Creating other tables, like Connect.Tuire AS Yhteystietoja jne.;
+***
+
+# Siistimistä. Ei ne kaikki tablesit ollu kovin tarpeellisia..
+
+***
+
+# improving
+
+***
+# code snippets
+# from the middle of imaginary http-request where sending code is possible 
+# Something like Please_add_this_to_your_databases_of_future_employees(“Tuire”)
+
+
+SELECT Name AS Nimi, Phone AS Puhelin, email
+FROM Connect.Tuire
+
+–
+SELECT Koodauskielet, Taho, Suoritus, Tila, TietoPaivitetty
+FROM Coding.CV
+GROUP BY Taho
+ORDER BY TietoPaivitetty DESC;
+
+
+–
+SELECT TOP 2 (  SELECT r.Suosittelija
+                FROM Experience.Recommendations as r
+                JOIN Potential.Employees AS e
+                    ON r.Ala = e.Ala
+                WHERE e.nimi = ‘TamaPotentiaalinenTyopaikka’) AS Suosittelijani,
+            IIF(r.LupaSoittaa = ‘kyllä’, ‘Puhelu’, ‘Yhteydet emailitse’) As ToivottuYhteysTapa,
+            r.Yhteystiedot as Yhteystiedot,
+            r.Paikka AS Ajoiltani, 
+            r.Aihe AS Kuvaus
+FROM Experience.Recommendations AS r 
+ORDER BY r.PrioNahnytOsaamistaEniten DESC;
+
+***
+
+# Results, after checking answer through politeness-decode-frank-forDummies-extension
+> 411 ‘Length required’
+
+***
+=’(
+***
+
+Ote taustatyölistasta:
+
+- Päivitetään dokumentaatiota.
+
+- Käydään työpaikanhakukoulutustapahtumissa.
+- Tutkitaan omia HR-kirjoja osaamisista ja kyvykkyyksistä.
+- Tutkitaan aiheen markkinoinnin viimeisimpä muotisanastoa aiheesta.
+- Tehdään järjetön taulu osaamisista, johon yritetään tunkea kaikki.
+- Tehdään järjettömästi töitä.
+- Ei olla tyytyväisiä.
+- MVP täyttyy.
+- Edetään
+
+***
+
+# more code snippets
+
+SELECT c.Osaaminen AS KokemustaAiheesta, c.Tyopaikalta AS Tyopaikalta, 
+    DATEDIFF(yy, w.Alkoi, w.Loppui) AS Vuotta
+FROM Experience.CanDo AS c
+JOIN Experience.Work AS w
+	ON w.Tyopaikka = c.Tyopaikalta
+WHERE (SELECT ala
+	FROM Experience.CanDo as w
+	JOIN Potential.Employees AS e
+		ON c.Ala = e.Ala
+WHERE e.nimi = ‘TamaPotentiaalinenTyopaikka’)
+GROUP BY c.Osaaminen
+ORDER BY c.Prio_KuumintaMarkkinointiHottia DESC;
+
+
+***
+102 Processing
+***
+Silence
+**
+102 Processing
+**
+500 Internal Server Error
+**
+102 Processing
+**
+Silence
+**
+204 No content
+**
+WHAT?!?
+**
+def soita_potentiaaliselle_tyonantajalle(numero:str):
+    >datamuunto_nappaily(numero):
+    >soitto_paina(numero):
+    >odotus(yhteys):
+    >puhu(kysymykset:list, kuunteluinnokkuus:bool, tapa:list, muistiinpanoalusta:str):
+
+
+soita_potentiaaliselle_tyonantajalle(numero)
+
+***
+
+# Seems like the output has definitely coded something like this:
+
+> f“Hei kiitos soitostasi ja kiinnostuksestasi yritystämme kohtaan {lisaa_markkinointikielta_ja_muodikkaita_sanamuotoja}. 
+Päätimme ottaa tehtäviin erittäin osaavan ja paljon näyttöä omaavan tyypin. Arvostimme erityisesti 
+näytöissä ollutta tehokkuutta ja vuosien kokemusta selkeillä näytöille. 
+Poistimme käytännössä hauista kaikki, joilla ei ollut {x} vuosia kokemusta alalta, 
+sillä saimme niin paljon potentiaalisia hakemuksia. 
+Valituksi tuli paras erittäin {ylistyssana_joskus_persoonallinen} joukosta. 
+Valitulla oli muun muassa{järjettömiä_saavutuksia_ja_numerolukuja_aloittelijatason_hakuun}. 
+Erityisesti tietokantatyössä hän on loistava ja tiimien mukaan käytännössä mullistanut työmme 
+ja mahdollistanut kehityksellemme aivan toisen asteen ottamisen… 
+Niinpä me rekrytoinnissa päätimme, että meillä ei hetkeen ole itse asiassa tarvetta hakea uusia junioreja… 
+Niin… eihän se ole oikein mikään salaisuus, kun näkyy jo Linkkarissa 
+ja on kuuluisa sarjakuvista, kuten xkcd… 
+Niin. Kyllä. 
+Dear Little Poppy Tables otti meihin yhteyttä aloitti ihan vain jokusta päivää ennen kuin laitoit hakemuksesi…”
+
+
+***
+=’(
+***
+
+Potential_organizations_search_results.poista_nimella('TamaPotentiaalinenTyopaikka’)
+
+Class Motivoidu:
+    def __init__(self, jne)
+    self.jne = jne
+
+	>def arvioi_tilanne()
+    >def valitse_listalta([liiku(), kavereita(), nettiin(Freetime.GizmosToBuyWithWages), 
+                nettiin(list_motivational), unohda_hetkeksi(open_game), 
+                unohda_hetkeksi(open_book),
+                unohda_hetkeksi(Freetime.CodeToDoIfMoreFreetime)])
+	>def paivita_ohjelmaa()
+	>def paivita_opittua(‘Documentation snippets on the process of finding an employment’)
+	>def aloita_uusi_prosessi()
