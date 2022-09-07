@@ -1,1 +1,7 @@
 asetustiedosto.py
+test_luokkaPortfoliokelpoinen.py
+testifunktio.py
+portfolio/__pycache__/asetustiedosto.cpython-310.pyc
+tests/__pycache__/asetustiedosto.cpython-310.pyc
+tests/__pycache__/test_luokkaPortfoliokelpoinen.cpython-310.pyc
+tests/__pycache__/testifunktio.cpython-310.pyc

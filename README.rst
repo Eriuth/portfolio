@@ -12,8 +12,10 @@ Aktiivinen työnhaku päällä. Kiire ja esittely on tärkeämpää juuri nyt ku
 
 *Done*
 
+Huijattu itseä työnhaussa. Mutta vain vähän. Sekin vain viiden jälkeen keskiviikkona.
+-> Eli test-kansioon on tehty class, funktioita ja asetustiedosto testausta ja readme-tiedostojen viennin automatisointia varten.
 1.0.1? Minor oikolukua.
-Huijattu itseä. Vähän. Vain sunnuntaina.
+Huijattu itseä. Vähän. Vain sunnuntaina. Tuli aloitettua Path-libin tutkiminen...
 Muutettu Public-tilaan.
 Gitignore ok.
 Gittiin privana testiä varten ennen julkaisua.
@@ -26,7 +28,7 @@ Harkinta tavoista julkistaa v1.0 portfolio, jotta löytyy alkeiskoodauspaikka.
 
 Sormet syyhyävät Pythonin standardikirjastojen tutkimiseeen. 
 Vaikuttaa sille, että pahtlibin avulla saisi aloitettua asetustiedoston teon, jossa voisi automatisoida
-readme-tiedostojen ja erilaisten requirements-tiedostojen, kuten toml on, kopioimisen tähän repoon.
+readme-tiedostojen ja erilaisten requirements-tiedostojen, kuten toml on, kopioimisen tähän repoon. Eli vertailu ja copy.
 Aloitetaan siitä, testataan ja luetaanpa vielä hieman lisää... ah... ihan vain keskittyen hetkeksi ja kaiken muun unohtaen... krhmmnn
 Ei kun ensin se työ... ensin se työ...
 
