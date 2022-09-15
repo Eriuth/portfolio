@@ -1,19 +1,26 @@
-**Tämä Repo tulee esittelemään kootusti eri repojen Readme-filejä, requirementseja ja mahdollisesti kansioittain kuvia**
+**Tämä Repo tulee esittelemään kootusti eri repojen Readme-tiedostoja, requirementseja ja mahdollisesti kansioittain kuvia**
 
-Koska osa usein omasta kiinnostuksesta pyörittelen nimenomaan omaa ja itse generoimaani dataa, ei ole oleellista jakaa kaikkea. 
-Välillä Readme riittänee. Julkasia repoja ajan ja harrastuneisuuden myötä lisää.
+| Tämä on portfolio, joka on repo, joka koostuu projektieni readme-tiedostoista ja paikoin riippuvuuskuvauksista.
+| Koska olen harrastajakoodari, pyörittelen usein itse generoimaani dataa tai erilaisten kurssien harjoituksia.
+| Tämä on syy, miksi olen päättänyt jakaa useammasta (myös private-repostani) tässä erikseen readme-tiedostot.
+| Ainoan poikkeuksen kansioon tuottaa laiskuuteni käyttää (ja uteliaisuuteni kiertää) copypastea eli toisin sanoen tests-kansioni sisältö.
+| Readme-tiedostojen eli tämän portfolio-repon lisäksi githubistani löytyy luonnollisesti muita repoja sekä julkista koodia. 
 
-Katsothan, mistä taustoista tulen tyyppistä viestittelyäni, halutessasi linkkarin puolelta -> https://www.linkedin.com/in/tuire-ahola/ lisää.
+| Lisää minusta työpuolella -> https://www.linkedin.com/in/tuire-ahola/ .
+| Github -> https://github.com/Eriuth
 
 **Todo**
 
-Aktiivinen työnhaku päällä. Kiire ja esittely on tärkeämpää juuri nyt kuin kaikki taiteen säännöt.
+Class Portfoliokelpoinen & testifunktio.py kuntoon loppuun.
 
 
 **Done**
 
+| Työpaikka löytynyt. Voi koodata useammin iltaisin ja vapaa-ajalla sekä nyhrätä yksityiskohtaa niin paljon kuin haluaa.
+| Käytin pe hetken aikaa ihmetellen ääkkösiä, jotta saisin readme-fileiden vertailun kuntoon.
+| Opittua: Openin yhteydessä encoding tarpeellinen. (Lisäksi python 2 aikaan on ollut hankalampaa...)
 | Huijattu itseä työnhaussa. Mutta vain vähän. Sekin vain viiden jälkeen keskiviikkona.
-| -> Eli test-kansioon on tehty class, funktioita ja asetustiedosto testausta ja readme-tiedostojen viennin automatisointia varten.
+| -> Eli test-kansioon on tehty class, funktioita ja asetustiedosto testausta readme-tiedostojen viennin automatisointia varten.
 | 1.0.1? Minor oikolukua.
 | Huijattu itseä. Vähän. Vain sunnuntaina. Tuli aloitettua Path-libin tutkiminen...
 | Muutettu Public-tilaan.
@@ -23,6 +30,7 @@ Aktiivinen työnhaku päällä. Kiire ja esittely on tärkeämpää juuri nyt ku
 | Copypaste vain ne repot tähän.
 | Useampi portfolioista tarvitsee viilausta ja käsittelee omaa dataa jne.. Julkaisut vaikuttavat työläille, mutta hauskoille projekteille.
 | Harkinta tavoista julkistaa v1.0 portfolio, jotta löytyy alkeiskoodauspaikka.
+
 
 **Planning, ideas jne. ->**
 
@@ -37,3 +45,5 @@ Olisi myös hauskaa jatkaa Fullstack-kurssia..., mutta ensin se työ... ensin se
 Jos nyt vähän työhakukirjeiden sijaan kuitenkin koodaisi.... siis... krhmmm.... se työ... ensin se työ...
 
 Oikoluku.
+
+Filescraper... hmmmm.... 
